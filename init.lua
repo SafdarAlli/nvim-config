@@ -726,7 +726,17 @@ require('lazy').setup({
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
       require('mason-lspconfig').setup {
-        ensure_installed = { 'lua_ls' }, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
+        ensure_installed = {
+          'lua_ls',
+          'html',
+          'cssls',
+          'tailwindcss',
+          'lua_ls',
+          'emmet_language_server',
+          'phpactor',
+          'volar',
+          'intelephense',
+        }, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
         automatic_installation = true,
         handlers = {
           function(server_name)
