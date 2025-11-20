@@ -731,10 +731,9 @@ require('lazy').setup({
           'html',
           'cssls',
           'tailwindcss',
-          'lua_ls',
           'emmet_language_server',
           'phpactor',
-          'volar',
+          'vuels',
           'intelephense',
         }, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
         automatic_installation = true,
